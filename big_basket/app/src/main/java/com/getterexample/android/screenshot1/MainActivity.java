@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<CustomClass> pro=new ArrayList<CustomClass>();
+    ArrayList<CustomClass> products=new ArrayList<CustomClass>();
     ListAdapter adapt;
     String[] name;
     TypedArray im;
@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
         for(int i=0;i<name.length;i++)
         {
             CustomClass cc=new CustomClass(name[i],im.getResourceId(i,-1));
-            pro.add(cc);
+            products.add(cc);
         }
-        ListAdapter adapter=new ListAdapter(this,pro);
+        ListAdapter adapter=new ListAdapter(this,products);
         l.setAdapter(adapter);
     }
 
