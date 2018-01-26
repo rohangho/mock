@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.getterexample.android.screenshot1.MainActivity">
+    tools:context="com.getterexample.android.myorder.MainActivity">
 
     <include
         android:id="@+id/toolbar"
@@ -19,32 +17,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/toolbar">
-
+        android:layout_below="@+id/toolbar">
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#ffffff"
-            android:textSize="18dp"
-            android:textAlignment="center"
-            android:text="SHOP BY CATEGORY"
-            android:padding="10dp"/>
-       <ImageView
-           android:layout_width="match_parent"
-           android:layout_height="7dp"
-           android:src="#D3D3D3"/>
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/list"/>
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:layout_margin="20dp"
 
+            android:text="Look Like Empty"/>
 
+        <Button
+            android:layout_width="250dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Start Shopping"
+            android:background="#FFC0CB"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
-
-
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -86,5 +77,4 @@
 
 
     </LinearLayout>
-
 </RelativeLayout>
